@@ -1,36 +1,30 @@
+<!DOCTYPE html>
 <html>
-    <img id="image" src="images/1.jpg" alt="">
-    <script src="jquery-1.11.0.js"></script>
-    <script>
-    
-    var position = 1;
-    var maxPosition = 4;
-    function advancePosition() {
-        position++;
-        if (position > maxPosition) {
-            position = 1;
+    <head>
+        <meta charset="utf-8">
+        <title>Slideshow</title>
+    </head>
+    <body>
+        <img id="image" src="images/1.jpg" alt="">
+        <script src="jquery-1.11.0.js"></script>
+        <script>
+        
+        var position = 1;
+        var maxPosition = 4;
+        
+        function nextImage() {
+            position++;
+            if (position > maxPosition) {
+                position = 1;
+            }
+            $('#image').fadeOut(250, function() {
+                $('#image').attr('src', 'images/' + position + '.jpg');
+                $('#image').fadeIn(250);
+            });
         }
-        $('#image').fadeOut(1000, function() {
-          $('#image').attr('src', 'images/' + position + '.jpg');
-          $('#image').fadeIn(1000);
-        });
-    };
-    $('#image').click(advancePosition);
-    setInterval(advancePosition, 5000);
-    
-    /*
-    
-    The more nuanced version resets the interval on click
-    
-    var timespan = 5000;
-    var interval = setInterval(advancePosition, timespan);
-    $('#image').click(function() {
-        advancePosition();
-        clearInterval(interval);
-        interval = setInterval(advancePosition, timespan);
-    });
-    
-    */
-    
-    </script>
+        
+        $('#image').click(nextImage);
+        
+        </script>
+    </body>
 </html>
