@@ -15,7 +15,7 @@ So let's do it now. If you haven't already, click the fork button up above. You 
 
 What you need to do next is clone this repository (the forked one) onto your own computer. Copy the URL from the sidebar under the button that says settings. Now open up the command line terminal, type in `cd ~/Desktop` and then `git clone [url]` (replacing "[url]" with the URL that you just copied).
 
-You should see a new 'week06' folder appear on your desktop. Try opening up 'slideshow.html' in your browser and see if you can get it to work. We are going to rebuild this example *almost* from scratch. But before we get to that, we'll need some photos—more than 3, less than 10. Just download some high resolution photos, somewhere between 800—1024 pixels wide is good, to use for your version of the slideshow. Replace the cat pictures in the 'images' folder, with your selections, and name them 1.jpg, 2.jpg, 3.jpg, etc.
+You should see a new 'javascript-week06' folder appear on your desktop. Try opening up 'slideshow.html' in your browser and see if you can get it to work. We are going to rebuild this example *almost* from scratch. But before we get to that, we'll need some photos—more than 3, less than 10. Just download some high resolution photos, somewhere between 800—1024 pixels wide is good, to use for your version of the slideshow. Replace the cat pictures in the 'images' folder, with your selections, and name them 1.jpg, 2.jpg, 3.jpg, etc.
 
 #### Part 3: Starting over
 
