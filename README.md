@@ -83,6 +83,8 @@ $('#image').click(function() {
 </script>
 ```
 
+Try the slideshow out. If it doesn't work, double check that your 'images' folder has the files you chose, and that they're named 1.jpg, 2.jpg, etc.
+
 The variable `this` is special; it gets assigned automatically according to the *context* that the function is running in. jQuery does a clever thing where whichever element was clicked on is available as the variable `this` inside the click handler function. (Note: this is not the case with DOM event listeners, like with `.addEventListener()`.)
 
 Now let's add a variable `num` to keep track of which image we're currently showing.
