@@ -100,7 +100,7 @@ You should now have a slideshow that shows each of your images in a sequence. We
 
 Again, commit your changes like we did in the previous step. Committing often is a good habit to get into. Choose an informative commit message, the part after `-m` between the quotes.
 
-#### Part 6: Back the first image
+#### Part 6: Wrapping back around to the first image
 
 One problem with the current code is that if you click on the image to advance past the last item, it tries to show another image that doesn't exist. We can add a conditional to account for this situation.
 
