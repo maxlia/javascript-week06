@@ -63,7 +63,7 @@ In this case clicking on the image will show a message 'hi' in the Firebug conso
 Before continuing to this next step, commit your changes and push them to GitHub. The commands will look something like this:
 
 ```
-git commit -am "Swap the image"
+git commit -am "Click listener"
 git push
 ```
 
