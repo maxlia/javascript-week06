@@ -58,6 +58,8 @@ $('#image').click(function() {
 
 This code uses the jQuery `$` function to find all the elements on the page with an ID attribute set to 'image' (the `#image` selector), and uses the `.click()` method to listen for when the user clicks. The function we're passing to `.click()` is just a block of code that will execute later, when the user clicks on the image.
 
+In this case clicking on the image will show a message 'hi' in the Firebug console.
+
 Before continuing to this next step, commit your changes and push them to GitHub. The commands will look something like this:
 
 ```
