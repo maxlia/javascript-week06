@@ -9,8 +9,12 @@
         <script src="jquery-1.11.0.js"></script>
         <script>
             var num =1;
+            var max = 4;
             $('#image').click(function(){
                 num++;
+                if (num > max){
+                    num = 1;
+                }
                 var image = 'images/' + num +'.jpg';
                 this.src = image;
             });
