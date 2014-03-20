@@ -10,14 +10,18 @@
         <script>
             var num =1;
             var max = 4;
-            $('#image').click(function(){
+            function slide(){
                 num++;
                 if (num > max){
                     num = 1;
                 }
-                var image = 'images/' + num +'.jpg';
-                this.src = image;
-            });
+               $('#image').fadeOut(3000, function(){ 
+                $('#image').attr('src', 'images/' + num +'.jpg');
+                $('#image').fadeIn(3000);
+                });
+           }
+
+            $('#image').click(slide);
         </script>
     </body>
 </html>
