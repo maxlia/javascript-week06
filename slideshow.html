@@ -8,8 +8,11 @@
         <img id="image" src="images/1.jpg" alt="" >
         <script src="jquery-1.11.0.js"></script>
         <script>
+            var num =1;
             $('#image').click(function(){
-                console.log('hi');
+                num++;
+                var image = 'images/' + num +'.jpg';
+                this.src = image;
             });
         </script>
     </body>
