@@ -15,7 +15,7 @@
         
         var images;
         var num=0;
-	 			
+	 		
 		flickr.photos.search(
 		{text: 'Yellowstone',
 		 extras: 'o_dims'
@@ -27,6 +27,8 @@
 			
 			var num =0;
             var max =images.length - 1;
+            
+            resizeImage();
 			
            $('#pictures').click(function(){
                 num++;
